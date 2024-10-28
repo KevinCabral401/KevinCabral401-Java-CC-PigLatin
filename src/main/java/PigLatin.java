@@ -17,6 +17,11 @@ public class PigLatin {
      * @return the pig latin form of in.
      */
     public String returnPigLatin(String in){
-        return "";
+        String firstLetter = in.substring(0, 1);
+        System.out.println("First Letter is " + firstLetter);
+        String result = in.substring(1);
+        result = result + firstLetter + "ay";
+        
+        return result;
     }
 }
